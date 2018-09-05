@@ -1,3 +1,5 @@
+using Android.Content.Res;
+using AtividadeKaique.View;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +13,7 @@ namespace AtividadeKaique
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new Navegacao(new MainPage());
 		}
 
 		protected override void OnStart ()
@@ -21,7 +23,9 @@ namespace AtividadeKaique
 
 		protected override void OnSleep ()
 		{
-			// Handle when your app sleeps
+			
+	
+			
 		}
 
 		protected override void OnResume ()
